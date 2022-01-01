@@ -24,4 +24,4 @@ runpdf: pdf
 	$(PREVIEW) $(PDF)
 
 clean:
-	rm -f *.bbl *.blg *.aux *.log *.dvi *.pdf
+	rm -f *.bbl *.blg *.aux *.log *.dvi *.pdf *.fls *.lof *.lot *.toc *.fdb_latexmk
