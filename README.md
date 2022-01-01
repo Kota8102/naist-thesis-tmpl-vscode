@@ -1,11 +1,11 @@
 # (NAIST非公式) 修論・博論のTeXテンプレート
 
 # 特徴
-VSCode + Docker に最適化した修論・博論のTeXテンプレートです。
+VSCode + Docker に最適化した修論・博論のTeXテンプレートです。  
 devcontainerを使うことでVScode内で簡単にDockerを使用することができます。
 
 # ディレクトリの構造
-
+```bash
 ├── .devcontainer           
 ├── .vscode
 ├── img                        # 図など
@@ -22,6 +22,7 @@ devcontainerを使うことでVScode内で簡単にDockerを使用すること�
     ├── chapter4.tex           # 第4章
     ├── cmember.tex            # 主査と副査の方の名前
     └── personal_setting.tex   # 名前、学籍番号など
+```
 
 ## .vscode
 VScodeの設定が書いてあります。必要に応じて追記して下さい。
@@ -29,7 +30,7 @@ VScodeの設定が書いてあります。必要に応じて追記して下さ�
 ## .devcontainer
 VSCode devcontainerの設定ファイルです。
 
-docker imageは下記のを使用させて頂きました。
+docker imageは下記のを使用させて頂きました。  
 https://hub.docker.com/r/korosuke613/ubuntu-texlive-ja-devcontainer
 
 # LaTeX Workshop
