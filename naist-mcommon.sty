@@ -145,6 +145,19 @@
  \space\sdaystr, \syearstr}
 %
 %
+\newcommand{\program}[1]{
+        \def\programstr{#1}
+        \def\is{1}
+        \def\bs{2}
+        \def\ms{3}
+        \def\cb{4}
+        \def\bn{5}
+        \def\ic{6}
+        \def\ds{7}
+        \def\jprogramstr{\ifcase\programstr\or{情報理工学}\or{バイオサイエンス}\or{物質理工学}\or{情報生命科学}\or{バイオナノ理工学}\or{知能社会創生科学}\or{データサイエンス}\fi}
+        \def\eprogramstr{\ifcase\programstr\or{Information Science and Engineering}\or{Biological Science}\or{Materials Science and Engineering}\or{Computational Biology}\or{Bionanotechnology}\or{Intelligent Cyber-Physical Systems}\or{Data Science}\fi}
+}
+%
 \newcommand{\department}[1]{
         \def\departmentstr{#1}
         \def\infproc{1}
@@ -289,7 +302,8 @@
         \begin{center}
                 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
                 \Large\bf \titlestr\footnote[1]
-                        {奈良先端科学技術大学院大学 先端科学技術研究科 情報科学領域 \jdoctitle,
+                        {奈良先端科学技術大学院大学 先端科学技術研究科 %情報科学領域 
+                        \jdoctitle,
                         %{ \jdepartmentstr}専攻
                         %NAIST-IS-\edoctitleacronym\studentnumberstr,
                         \datestr.}
@@ -318,7 +332,8 @@
                 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
                 \Large\bf \etitlestr\footnote[1]
                         {{\edoctitle}, %Department of {\edepartmentstr},
-                        Division of Information Science, Graduate School of Science and \mbox{Technology,}
+                        % Division of Information Science, 
+                        Graduate School of Science and \mbox{Technology,}
                         Nara Institute of Science and Technology,
                         %{NAIST-IS-\edoctitleacronym\studentnumberstr},
                         {\edatestr}.}
