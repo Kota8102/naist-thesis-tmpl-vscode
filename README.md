@@ -63,9 +63,9 @@ make clean
 ```
 
 # 謝辞
-以下のを参考にさせて頂きました。ありがとうございます。　　
-https://github.com/kmiya/naist-thesis-tmpl　　
-https://github.com/sdlab-naist/mthesis-style　　
+以下のを参考にさせて頂きました。ありがとうございます。
+- https://github.com/kmiya/naist-thesis-tmpl
+- https://github.com/sdlab-naist/mthesis-style
 
 # License
 The source code is licensed MIT.
